@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Invoice</title>
+    <style>
+      /* Global styles */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        width: 210mm;
+        height: 297mm;
+        margin: auto;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: white;
+      }
+
+      /* Header styles */
+      .floww-header-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      .floww-header-2 {
+        text-align: center;
+      }
+      .floww-header-2 > h1 {
+        font-size: 62px;
+        padding: 0;
+        margin: 0;
+      }
+      .floww-header-2 > p {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 30px;
+      }
+
+      .floww-header-left {
+        width: 25%;
+      }
+
+      .floww-header-right {
+        width: 30%;
+        text-align: right;
+      }
+      /* bill details */
+      .floww-billing-details {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .floww-billing-details-left {
+        width: 50%;
+        height: auto;
+      }
+      .floww-billing-details-right {
+        width: 50%;
+        height: auto;
+      }
+
+      /* Table styles */
+      .floww-table {
+        width: 90%;
+        margin: auto;
+        border-collapse: collapse;
+        font-size: medium;
+        margin-bottom: 30px;
+      }
+
+      .floww-table th {
+        padding: 10px;
+        text-align: left;
+        text-align: center;
+        font-size: large;
+        background-color: skyblue;
+      }
+
+      .floww-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+
+      .total {
+        text-align: right;
+        font-weight: bold;
+      }
+
+      /* Footer styles */
+      .footer {
+        margin-top: 20px;
+        font-size: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header 1 Start -->
+    <div class="floww-header-1">
+      <div class="floww-header-left">
+        <img
+          src="https://github.com/arupadhyay25/floww-dashboard/blob/main/img/logo/logo.png?raw=true"
+          alt=""
+          class="floww-header-logo"
+          width="100%"
+        />
+      </div>
+      <div class="floww-header-right">
+        <p>Date : <span>02 Jan 2023</span></p>
+      </div>
+    </div>
+    <!-- header 1 End -->
+    <!-- header 2 Start -->
+    <div class="floww-header-2">
+      <h1>INVOICE</h1>
+      <p>Invoice No. IN/2449/2022-2023</p>
+    </div>
+    <!-- header 2 End -->
+    <!-- billing Details Start -->
+    <div class="floww-billing-details">
+      <div class="floww-billing-details-left">
+        <h2>Billed to:</h2>
+        <p class="billing-name" style="font-size: medium">
+          <span>R1 Radiance Lights Pvt Ltd</span><br />
+          <span class="from-address"> F4, ABIL Imperial, Baner, Pune </span
+          ><br />
+          <span>account@r1radiancelights.co.in </span><br />
+          <span>GSTIN - 27AAHCR3703R1ZV</span>
+        </p>
+      </div>
+      <div class="floww-billing-details-right">
+        <h2>From :</h2>
+        <p class="from" style="font-size: medium">
+          <span>R1 Radiance Lights Pvt Ltd</span><br />
+          <span class="from-address"
+            >B-205, Four Seasons Appartment Anadpuri, Patna</span
+          ><br />
+          <span>info@gofloww.co </span><br />
+          <span>GSTIN - 10AAFCF1418F1ZD </span>
+        </p>
+      </div>
+    </div>
+    <!-- billing Details End -->
+    <!-- billing table Start -->
+    <table class="floww-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Standard 1 Page Website</td>
+          <td>1</td>
+          <td>₹25,000</td>
+          <td>₹25,000</td>
+        </tr>
+        <tr>
+          <td>Logo (with 8 versions)</td>
+          <td>1</td>
+          <td>₹1,500</td>
+          <td>₹1,500</td>
+        </tr>
+        <tr>
+          <td>Domain Purchase</td>
+          <td>1</td>
+          <td>₹1,000</td>
+          <td>₹1,000</td>
+        </tr>
+        <tr>
+          <td>Domain Purchase</td>
+          <td>1</td>
+          <td>₹411</td>
+          <td>₹411</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="total">Total</td>
+          <td>₹27,911</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border: none">
+            Payment method: Net Banking, UPI QR
+          </td>
+          <td colspan="1" class="total">GST (18%)</td>
+          <td>₹5,024</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border: none">
+            Note: Thank you for choosing us!
+          </td>
+          <td colspan="1" class="total">Grand Total</td>
+          <td>₹32,935</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- billing table End -->
+    <!-- payment Details Start -->
+    <div class="floww-billing-details">
+      <div class="floww-billing-details-left">
+        <h2>UPI QR (Scan to Pay)</h2>
+        <img src="./Qr.png" alt="qr" width="50%" />
+      </div>
+      <div class="floww-billing-details-right">
+        <h2>Net Banking Details</h2>
+        <ul class="from" style="font-size: medium">
+          <li style="display: flex; align-items: center">
+            <h3>Account No. :</h3>
+            &nbsp;&nbsp;
+            <p>50200076206740</p>
+          </li>
+          <li style="display: flex; align-items: center">
+            <h3>IFSC Code :</h3>
+            &nbsp;&nbsp;
+            <p>HDFC0004793</p>
+          </li>
+          <li style="display: flex; align-items: center">
+            <h3>Account Type :</h3>
+            &nbsp;&nbsp;
+            <p>Current</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- payment Details End -->
+    <div class="footer">
+      <p>Thank you for your business!</p>
+    </div>
+  </body>
+</html>
