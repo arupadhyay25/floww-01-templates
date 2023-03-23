@@ -11,7 +11,7 @@
         margin: 0;
         padding: 0;
         width: 210mm;
-        height: 297mm;
+        height: 290mm;
         margin: auto;
         -webkit-print-color-adjust: exact;
         print-color-adjust: white;
@@ -123,17 +123,18 @@
     <!-- header 2 End -->
     <!-- billing Details Start -->
     <div class="floww-billing-details">
-      <div class="floww-billing-details-left">
+      <div class="floww-billing-details-left" style="line-height: 1.5">
         <h2>Billed to:</h2>
         <p class="billing-name" style="font-size: medium">
           <span>R1 Radiance Lights Pvt Ltd</span><br />
           <span class="from-address"> F4, ABIL Imperial, Baner, Pune </span
           ><br />
           <span>account@r1radiancelights.co.in </span><br />
-          <span>GSTIN - 27AAHCR3703R1ZV</span>
+          <span>GSTIN - 27AAHCR3703R1ZV</span><br />
+          <span>Contact Number : +91 87676778975</span>
         </p>
       </div>
-      <div class="floww-billing-details-right">
+      <div class="floww-billing-details-right" style="line-height: 1.5">
         <h2>From :</h2>
         <p class="from" style="font-size: medium">
           <span>R1 Radiance Lights Pvt Ltd</span><br />
@@ -141,7 +142,8 @@
             >B-205, Four Seasons Appartment Anadpuri, Patna</span
           ><br />
           <span>info@gofloww.co </span><br />
-          <span>GSTIN - 10AAFCF1418F1ZD </span>
+          <span>GSTIN - 10AAFCF1418F1ZD </span><br />
+          <span>Contact Number : +91 87676778975</span>
         </p>
       </div>
     </div>
@@ -186,11 +188,16 @@
           <td>₹27,911</td>
         </tr>
         <tr>
+          <td colspan="2" style="border: none"></td>
+          <td colspan="1" class="total">GST (18%)</td>
+          <td>₹5,024</td>
+        </tr>
+        <tr>
           <td colspan="2" style="border: none">
             Payment method: Net Banking, UPI QR
           </td>
-          <td colspan="1" class="total">GST (18%)</td>
-          <td>₹5,024</td>
+          <td colspan="1" class="total">Discount</td>
+          <td style="color: red">-₹499</td>
         </tr>
         <tr>
           <td colspan="2" style="border: none">
@@ -228,10 +235,6 @@
           </li>
         </ul>
       </div>
-    </div>
-    <!-- payment Details End -->
-    <div class="footer">
-      <p>Thank you for your business!</p>
     </div>
   </body>
 </html>
