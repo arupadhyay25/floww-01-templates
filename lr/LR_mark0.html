@@ -9,24 +9,28 @@
     <style>
       body {
         font-family: sans-serif;
-        margin: 4%;
+        margin: 20px;
+        width: 297mm;
+        height: 200mm;
       }
       /* <!-- Header 1 Start --> */
       .floww-header {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
         align-items: center;
       }
       .floww-header > div:nth-child(1) {
         width: 20%;
+        margin: auto;
       }
       .floww-header > div:nth-child(2) {
         width: 60%;
         text-align: center;
+        margin: auto;
       }
       .floww-header > div:nth-child(3) {
         width: 20%;
+        margin: auto;
       }
       .floww-header-logo {
         width: 100%;
@@ -35,7 +39,6 @@
       /* <!-- Header 2 Starts --> */
       .floww-lr-table-1 {
         border: solid 2px;
-        padding: 10px;
         display: flex;
         justify-content: space-between;
       }
@@ -52,7 +55,6 @@
         text-transform: none;
       }
       .floww-lr-table-2 {
-        padding: 10px;
         display: flex;
         justify-content: space-between;
       }
@@ -75,30 +77,18 @@
         border: 2px solid black;
       }
 
-      table u {
-        text-decoration: underline dotted black;
-      }
-
       .table2 {
-        margin-top: 20px;
         width: 100%;
         border: none;
       }
 
       .table3 {
-        margin-top: 2px;
         width: 100%;
         border-collapse: collapse;
       }
 
       .table3 tr td {
         border: 2px solid black;
-      }
-
-      .sign {
-        position: absolute;
-        right: 150px;
-        margin-top: -43px;
       }
     </style>
   </head>
@@ -136,10 +126,7 @@
           </li>
           <li>
             Caution :
-            <span
-              >This consignment will not be Detained, re-route diverted or
-              re-book</span
-            >
+            <span>This consignment will not be Detained.</span>
           </li>
         </ul>
         <ul>
@@ -286,12 +273,14 @@
         </tr>
       </table>
       <!--Footer-->
-      <div class="footer">
-        <p>AT OWNERS RISK</p>
-      </div>
-      <div class="sign">
-        <p>FOR PAN INDIA TRANSPORTERS</p>
-        <p>SIGNATURE:</p>
+      <div style="width: 100%; display: flex; justify-content: space-between">
+        <div>
+          <p>AT OWNERS RISK</p>
+        </div>
+        <div>
+          <p>FOR PAN INDIA TRANSPORTERS</p>
+          <p>SIGNATURE:</p>
+        </div>
       </div>
     </div>
   </body>
