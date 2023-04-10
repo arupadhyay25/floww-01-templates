@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+      .container > div {
+        width: 50%;
+        margin: auto;
+      }
+      .container > div {
+        width: 50%;
+        margin: auto;
+      }
+      .container-img {
+        display: flex;
+        justify-content: end;
+      }
+      @media (max-width: 768px) {
+        .container {
+          display: grid;
+          width: 90%;
+          margin: auto;
+          gap: 0;
+        }
+        .container > div {
+          width: 90%;
+          margin: auto;
+          zoom: 0.8;
+          text-align: center;
+        }
+        .container-img {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-img">
+        <img
+          src="./404-page-google-chrome-2023-04-10-17-00-22_WtQIKvG4__online-video-cutter_com___1__AdobeExpress.gif"
+          alt="IMG"
+        />
+      </div>
+      <div>
+        <p style="font-size: 72px">404</p>
+        <p style="font-size: 52px">UH OH! You're lost.</p>
+        <p style="font-size: 22px">
+          The page you are looking for does not exist. <br />
+          How you got here is a mystery. <br />
+          But you can click the button below to go back to the homepage.
+        </p>
+        <p style="font-size: 32px; text-decoration: underline">
+          <a href="http://">Back to home</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

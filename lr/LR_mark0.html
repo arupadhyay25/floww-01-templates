@@ -7,17 +7,18 @@
     <title>LR</title>
     <!-- CSS -->
     <style>
-      body {
+      .floww-lr-body {
         font-family: sans-serif;
-        margin: 20px;
-        width: 297mm;
-        height: 200mm;
+        width: 210mm;
+        height: auto;
       }
       /* <!-- Header 1 Start --> */
       .floww-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        zoom: 0.8;
+        margin-bottom: 30px;
       }
       .floww-header > div:nth-child(1) {
         width: 20%;
@@ -31,6 +32,7 @@
       .floww-header > div:nth-child(3) {
         width: 20%;
         margin: auto;
+        word-wrap: break-word;
       }
       .floww-header-logo {
         width: 100%;
@@ -41,9 +43,10 @@
         border: solid 2px;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
       }
       .floww-lr-table-1 > ul {
-        width: 25%;
+        width: 50%;
         line-height: 1.5;
       }
       .floww-lr-table-1 > ul > li {
@@ -57,6 +60,7 @@
       .floww-lr-table-2 {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
       }
       .floww-lr-table-2 > ul {
         width: 50%;
@@ -72,29 +76,26 @@
       }
       /* <!-- Header 2 Ends --> */
 
-      table {
-        width: 100%;
-        border: 2px solid black;
-      }
-
-      .table2 {
+      .floww-lr-table2 {
         width: 100%;
         border: none;
       }
 
-      .table3 {
+      .floww-lr-table3 {
         width: 100%;
         border-collapse: collapse;
+        border: 1px solid black;
       }
 
-      .table3 tr td {
-        border: 2px solid black;
+      .floww-lr-table3 tr td {
+        border: 1px solid black;
+        padding: 5px;
       }
     </style>
   </head>
 
   <body>
-    <div>
+    <div class="floww-lr-body">
       <!-- Header 1 Start -->
       <div class="floww-header">
         <div>
@@ -128,8 +129,6 @@
             Caution :
             <span>This consignment will not be Detained.</span>
           </li>
-        </ul>
-        <ul>
           <li>Driver Name : <span>Lokesh</span></li>
           <li>Driver No : <span>8129578769</span></li>
           <li>License : <span>AQ44DS6FX</span></li>
@@ -142,8 +141,6 @@
           <li>Amount : ₹ <span>50000</span></li>
           <li>Date : <span>20-03-2023</span></li>
           <li>Risk : <span>none</span></li>
-        </ul>
-        <ul>
           <li>from : <span>Pune</span></li>
           <li>to : <span>New Delhi</span></li>
           <li>E-way Bill : <span>123456789123</span></li>
@@ -177,102 +174,78 @@
 
       <!--Third 2 Ends here-->
       <!--Third 3 starts from here-->
-      <table class="table3">
-        <tr>
-          <td><b>NO.OF PKGS</b></td>
-          <td><b>DESCRIPTION(SAIN TO CONTAIN)</b></td>
-          <td><b>ACTUAL</b></td>
-          <td><b>CHARGED</b></td>
-          <td><b>RATE</b></td>
-          <td><b>TOTAL FREIGHT</b></td>
-          <th colspan="2">FREIGHT</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>coal</td>
-          <td></td>
-          <td></td>
-          <td>15325</td>
-          <td></td>
-          <th colspan="2">TO PAY</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>coal</td>
-          <td></td>
-          <td></td>
-          <td>15325</td>
-          <td></td>
-          <td>Service charges</td>
-          <td>0</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Package and Unpackage Charge</td>
-          <td>0 & 0</td>
-        </tr>
+      <table class="floww-lr-table3">
+        <thead>
+          <tr>
+            <td><b>Sr. N0.</b></td>
+            <td><b>No of Packages</b></td>
+            <td><b>Description (Sain to Contain)</b></td>
+            <td><b>Actual Weight</b></td>
+            <td><b>Chared Weight</b></td>
+            <td><b>Rate</b></td>
+            <td><b>Total Fright</b></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>coal</td>
+            <td></td>
+            <td></td>
+            <td>15325</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>coal</td>
+            <td></td>
+            <td></td>
+            <td>15325</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
 
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Loading and Unloading Charge</td>
-          <td>0 & 0</td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Other Charges</td>
-          <td>0</td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Total</td>
-          <td>25000</td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Advance</td>
-          <td>10000</td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>Balance</td>
-          <td>15000</td>
-        </tr>
+        <tfoot>
+          <tr>
+            <td colspan="3"><b></b></td>
+            <td colspan="3"><b>Service charges</b></td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td colspan="3"><b></b></td>
+            <td colspan="3"><b>Package and Unpackage Charge</b></td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td colspan="3"><b></b></td>
+            <td colspan="3"><b>Loading and Unloading Charge</b></td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td colspan="3"><b></b></td>
+            <td colspan="3"><b>Other Charges</b></td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td colspan="3"><b></b></td>
+            <td colspan="3"><b>Total</b></td>
+            <td>1705</td>
+          </tr>
+          <tr>
+            <td colspan="3"><b></b></td>
+            <td colspan="3"><b>Advance</b></td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td colspan="3"><b></b></td>
+            <td colspan="3"><b>Balance</b></td>
+            <td>1250</td>
+          </tr>
+        </tfoot>
       </table>
       <!--Footer-->
+
       <div style="width: 100%; display: flex; justify-content: space-between">
         <div>
           <p>AT OWNERS RISK</p>
